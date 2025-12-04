@@ -23,12 +23,12 @@ function Nav() {
         </NavLink>
 
         <NavLink 
-          to="/test" 
+          to="/alert" 
           className={({ isActive }) =>
             `text-lg hover:text-[#FFD700] ${isActive ? 'text-[#FFD700] font-semibold' : ''}`
           }
         >
-          Test
+          Alert
         </NavLink>
 
         <NavLink 
