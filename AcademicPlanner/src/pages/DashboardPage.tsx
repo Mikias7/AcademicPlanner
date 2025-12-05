@@ -319,9 +319,9 @@ Your Academic Advisor`;
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Academic Plan */}
+            {/* Student Info */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Academic Plan</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Student Info</h2>
               <div className="space-y-3">
                 <div>
                   <span className="text-sm font-medium text-gray-600">Major:</span>
@@ -357,6 +357,7 @@ Your Academic Advisor`;
                     ))}
                   </ul>
                 </div>
+                {/* <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">Approve</button> */}
               </div>
             </div>
 
@@ -384,6 +385,50 @@ Your Academic Advisor`;
               </div>
             </div>
           </div>
+
+          {/* Academic Plan */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Academic Plan</h2>
+              <div className="space-y-3 max-h-96 overflow-y-auto">
+                {selectedStudent.completedCourses.map((course, idx) => (
+                  <div key={idx} className="border-b border-gray-200 pb-3 last:border-0">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-medium text-gray-900">{course.code}</p>
+                        <p className="text-sm text-gray-600">{course.name}</p>
+                        <p className="text-xs text-gray-500 mt-1">{course.semester}</p>
+                      </div>
+                      <div className="text-right">
+                        <span className="inline-block px-2 py-1 bg-blue-50 text-blue-700 rounded font-medium text-sm">
+                          {course.grade}
+                        </span>
+                        <p className="text-xs text-gray-500 mt-1">{course.credits} credits</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="w-full pt-8">
+                <textarea
+                    className="w-full h-40 p-3 border rounded-lg border-gray-300 text-sm resize-y"
+                    placeholder="comment..."
+                    value={""}
+                    onChange={(e) => console.log(e)}
+                />
+
+                <div className="flex gap-3 mt-3">
+                    <button className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-800 transition-colors font-medium">
+                    Approve
+                    </button>
+
+                    <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
+                    Comment
+                    </button>
+                </div>
+            </div>
+
+              {/* <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">Approve</button> */}
+            </div>
 
           {/* Hold Details */}
           {selectedStudent.holdDetails && (
