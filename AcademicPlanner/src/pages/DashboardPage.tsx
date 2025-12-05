@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ChevronLeft, AlertCircle, Mail, GraduationCap, Calendar, User } from 'lucide-react';
 
 import { useStudentsFromJSON } from '../hooks/useStudentsFromJSON';
@@ -616,7 +616,7 @@ Your Academic Advisor`;
                 {filteredStudents.map((student) => (
                   <tr
                     key={student.id}
-                    onClick={() => setSelectedStudent(student)}
+                    onClick={() => {console.log(student), setSelectedStudent(student)}}
                     className="hover:bg-gray-50 cursor-pointer transition-colors"
                   >
                     <td className="px-6 py-4 whitespace-nowrap">

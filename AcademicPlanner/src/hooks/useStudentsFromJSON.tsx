@@ -10,9 +10,17 @@ export interface Student {
   registrationStatus: string;
   holds: string;
   email: string;
-  completedCourses?: any[];
-  academicPlan?: any;
+  completedCourses: Course[];
+  academicPlan: any;
   holdDetails?: any;
+}
+
+export interface Course {
+  code: string;
+  name: string;
+  credits: number;
+  grade: string;
+  semester: string;
 }
 
 export function useStudentsFromJSON() {
@@ -35,8 +43,8 @@ export function useStudentsFromJSON() {
           registrationStatus: row.registrationStatus,
           holds: row.holds,
           email: row.email,
-          completedCourses: row.completedCourses || [],
-          academicPlan: row.academicPlan || {},
+          completedCourses: row.completedCourses,
+          academicPlan: row.academicPlan,
           holdDetails: row.holdDetails || null,
         }));
 
@@ -51,5 +59,6 @@ export function useStudentsFromJSON() {
     loadJSON();
   }, []);
 
+  console.log(loading)
   return students;
 }
