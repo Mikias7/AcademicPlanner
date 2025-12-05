@@ -1,4 +1,4 @@
-import CustomTable from "../components/CustomTable";
+import CustomTable from '../components/CustomTable';
 
 function AlertPage(){
     
@@ -6,7 +6,7 @@ function AlertPage(){
         <div className="pt-40">
             
             <div>
-                <CustomTable />;
+                <CustomTable />
             </div>
         </div>
     )

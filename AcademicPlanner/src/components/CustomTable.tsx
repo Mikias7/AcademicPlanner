@@ -1,88 +1,43 @@
-import React from 'react';
-import { Flex, Space, Table, Tag } from 'antd';
-import type { TableProps } from 'antd';
 
-interface DataType {
-  key: string;
-  name: string;
-  age: number;
-  address: string;
-  tags: string[];
+function CustomTable() {
+  const data = [
+    { id: 1, name: "John", age: 21, major: "Computer Science", type: "meow" },
+    { id: 2, name: "Sarah", age: 22, major: "Biology", type: "meow" },
+    { id: 3, name: "Mike", age: 20, major: "Economics", type: "meow" },
+  ];
+
+  return (
+    <div className="p-4">
+      <div className="overflow-x-auto rounded-xl shadow">
+        <table className="min-w-full text-left text-sm">
+          <thead className="bg-gray-100 border-b">
+            <tr>
+              <th className="px-4 py-3 font-medium text-gray-700">ID</th>
+              <th className="px-4 py-3 font-medium text-gray-700">Name</th>
+              <th className="px-4 py-3 font-medium text-gray-700">Age</th>
+              <th className="px-4 py-3 font-medium text-gray-700">Major</th>
+              <th className="px-4 py-3 font-medium text-gray-700">Alert Type</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {data.map((row) => (
+              <tr
+                key={row.id}
+                className="border-b hover:bg-gray-50 transition"
+              >
+                <td className="px-4 py-2">{row.id}</td>
+                <td className="px-4 py-2">{row.name}</td>
+                <td className="px-4 py-2">{row.age}</td>
+                <td className="px-4 py-2">{row.major}</td>
+                <td className="px-4 py-2">{row.type}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
 }
 
-const columns: TableProps<DataType>['columns'] = [
-  {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
-    render: (text) => <a>{text}</a>,
-  },
-  {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
-  },
-  {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
-  },
-  {
-    title: 'Tags',
-    key: 'tags',
-    dataIndex: 'tags',
-    render: (_, { tags }) => (
-      <Flex gap="small" align="center" wrap>
-        {tags.map((tag) => {
-          let color = tag.length > 5 ? 'geekblue' : 'green';
-          if (tag === 'loser') {
-            color = 'volcano';
-          }
-          return (
-            <Tag color={color} key={tag}>
-              {tag.toUpperCase()}
-            </Tag>
-          );
-        })}
-      </Flex>
-    ),
-  },
-  {
-    title: 'Action',
-    key: 'action',
-    render: (_, record) => (
-      <Space size="middle">
-        <a>Invite {record.name}</a>
-        <a>Delete</a>
-      </Space>
-    ),
-  },
-];
-
-const data: DataType[] = [
-  {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
-  },
-  {
-    key: '2',
-    name: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-    tags: ['loser'],
-  },
-  {
-    key: '3',
-    name: 'Joe Black',
-    age: 32,
-    address: 'Sydney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
-  },
-];
-
-const CustomTable: React.FC = () => <Table<DataType> columns={columns} dataSource={data} />;
-
-export default CustomTable;
+export default CustomTable
