@@ -19,34 +19,25 @@ function Nav() {
             `text-lg hover:text-[#FFD700] ${isActive ? 'text-[#FFD700] font-semibold' : ''}`
           }
         >
-          Home
+          Dashboard
         </NavLink>
 
         <NavLink 
-          to="/alert" 
+          to="/course" 
           className={({ isActive }) =>
             `text-lg hover:text-[#FFD700] ${isActive ? 'text-[#FFD700] font-semibold' : ''}`
           }
         >
-          Alert
+          Course
         </NavLink>
 
         <NavLink 
-          to="/test1" 
+          to="/test" 
           className={({ isActive }) =>
             `text-lg hover:text-[#FFD700] ${isActive ? 'text-[#FFD700] font-semibold' : ''}`
           }
         >
-          Test1
-        </NavLink>
-
-        <NavLink 
-          to="/test2" 
-          className={({ isActive }) =>
-            `text-lg hover:text-[#FFD700] ${isActive ? 'text-[#FFD700] font-semibold' : ''}`
-          }
-        >
-          Test2
+          Test
         </NavLink>
       </div>
       
