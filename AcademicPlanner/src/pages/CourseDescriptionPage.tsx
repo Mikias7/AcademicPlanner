@@ -132,7 +132,7 @@ const CourseDescriptionPage = () => {
                     </tr>
                     {expandedRow === index && (
                       <tr>
-                        <td colSpan="5" className="px-6 py-6 bg-gray-50 border-b border-gray-200">
+                        <td colSpan={5} className="px-6 py-6 bg-gray-50 border-b border-gray-200">
                           <div className="space-y-4">
                             {/* Course Description */}
                             <div className="bg-white rounded-lg shadow p-4">

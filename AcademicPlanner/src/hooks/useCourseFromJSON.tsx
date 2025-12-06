@@ -42,7 +42,7 @@ export function useCoursesFromJSON() {
   }, []);
 
   // For debugging: log loading state and courses
-//   console.log("Loading:", loading);
+  console.log("Loading:", loading);
 //   console.log("Courses:", courses);
 
   return courses;
