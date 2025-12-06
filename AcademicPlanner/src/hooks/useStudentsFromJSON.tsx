@@ -30,7 +30,7 @@ export function useStudentsFromJSON() {
   useEffect(() => {
     async function loadJSON() {
       try {
-        const res = await fetch("/adviseeList.json"); // <-- JSON file path
+        const res = await fetch(`${import.meta.env.BASE_URL}adviseeList.json`); // <-- JSON file path
         const data = await res.json();
 
         // Data is already structured correctly, but ensure typing:
