@@ -1,0 +1,72 @@
+[
+  {
+    "code": "CS101",
+    "name": "Introduction to Computer Science",
+    "description": "Learn the fundamentals of computer science, programming, and problem-solving.",
+    "required": ["Sofia Jackson", "Lucas Martinez", "Elijah Lee", "Ava Perez", "Sophia Lee"],
+    "planned": ["Lucas Martinez", "Elijah Lee", "Sophia Lee"]
+  },
+  {
+    "code": "CS102",
+    "name": "Data Structures and Algorithms",
+    "description": "Learn how to organize data efficiently and implement algorithms.",
+    "required": ["Lucas Lee", "Elias Miller", "Noah Robinson", "Ava King", "Elijah Robinson"],
+    "planned": ["Lucas Lee", "Elijah Robinson"]
+  },
+  {
+    "code": "CS103",
+    "name": "Databases and Information Systems",
+    "description": "Introduction to relational databases, SQL, and data management.",
+    "required": ["Daniel Harris", "Henry Brown", "Olivia Wright", "Isabella Martinez", "Lucas Rodriguez"],
+    "planned": ["Henry Brown", "Lucas Rodriguez"]
+  },
+  {
+    "code": "CS104",
+    "name": "Operating Systems",
+    "description": "Understand how operating systems manage resources and processes.",
+    "required": ["Sophia Perez", "Charlotte Harris", "Mia Davis", "Aiden Lee", "Henry Robinson"],
+    "planned": ["Sophia Perez", "Henry Robinson"]
+  },
+  {
+    "code": "CS105",
+    "name": "Web and Mobile Development",
+    "description": "Build web and mobile applications using modern frameworks.",
+    "required": ["Lucas King", "Isabella Martinez", "Lucas Clark", "Avery Davis", "Gianna Ramirez"],
+    "planned": ["Lucas King", "Lucas Clark", "Gianna Ramirez"]
+  },
+  {
+    "code": "CS106",
+    "name": "Artificial Intelligence and Machine Learning",
+    "description": "Introduction to AI and ML algorithms and applications.",
+    "required": ["Luna Jackson", "Jacob Williams", "Isabella Perez", "Ethan Walker", "Ava Robinson"],
+    "planned": ["Isabella Perez", "Ethan Walker", "Ava Robinson"]
+  },
+  {
+    "code": "CS107",
+    "name": "Cybersecurity and Ethical Hacking",
+    "description": "Learn about network security, cyber threats, and ethical hacking practices.",
+    "required": ["Alexander Lee", "Elias Williams", "Liam Martin", "Luna Smith", "Amelia Thomas"],
+    "planned": ["Elias Williams", "Liam Martin", "Luna Smith"]
+  },
+  {
+    "code": "CS108",
+    "name": "Cloud Computing and Big Data",
+    "description": "Understand cloud platforms and processing of large-scale data.",
+    "required": ["James Williams", "Sophia Lopez", "Ethan Johnson", "Layla Martin", "Mia Rodriguez"],
+    "planned": ["James Williams", "Ethan Johnson"]
+  },
+  {
+    "code": "CS109",
+    "name": "Robotics and Embedded Systems",
+    "description": "Learn robotics principles, sensors, and embedded system programming.",
+    "required": ["Ethan Walker", "Emma Rodriguez", "Mason Johnson", "Aiden Brown", "Gianna Young"],
+    "planned": ["Ethan Walker", "Mason Johnson", "Gianna Young"]
+  },
+  {
+    "code": "CS110",
+    "name": "Advanced Software Engineering",
+    "description": "Learn software project management, testing, and design patterns.",
+    "required": ["Caleb Martin", "William Brown", "Luna Jackson", "Jacob Jones", "Aria King", "James Gonzalez", "Elizabeth Brown"],
+    "planned": ["Caleb Martin", "Aria King", "Elizabeth Brown"]
+  }
+]
