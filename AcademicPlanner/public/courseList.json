@@ -2,351 +2,71 @@
   {
     "code": "CS101",
     "name": "Introduction to Computer Science",
-    "description": "Learn the basics of computer science.",
-    "required": ["Sofia Jackson", "Lucas Martinez"],
-    "planned": ["Lucas Martinez"]
+    "description": "Learn the fundamentals of computer science, programming, and problem-solving.",
+    "required": ["Sofia Jackson", "Lucas Martinez", "Elijah Lee", "Ava Perez", "Sophia Lee"],
+    "planned": ["Lucas Martinez", "Elijah Lee", "Sophia Lee"]
   },
   {
     "code": "CS102",
-    "name": "Data Structures",
-    "description": "Learn about data structures and algorithms.",
-    "required": ["Elijah Lee", "Ava Perez", "Sophia Lee"],
-    "planned": ["Ava Perez"]
+    "name": "Data Structures and Algorithms",
+    "description": "Learn how to organize data efficiently and implement algorithms.",
+    "required": ["Lucas Lee", "Elias Miller", "Noah Robinson", "Ava King", "Elijah Robinson"],
+    "planned": ["Lucas Lee", "Elijah Robinson"]
   },
   {
     "code": "CS103",
-    "name": "Databases",
-    "description": "Introduction to database systems.",
-    "required": ["Lucas Lee", "Elias Miller", "Noah Robinson"],
-    "planned": ["Lucas Lee"]
+    "name": "Databases and Information Systems",
+    "description": "Introduction to relational databases, SQL, and data management.",
+    "required": ["Daniel Harris", "Henry Brown", "Olivia Wright", "Isabella Martinez", "Lucas Rodriguez"],
+    "planned": ["Henry Brown", "Lucas Rodriguez"]
   },
   {
     "code": "CS104",
     "name": "Operating Systems",
-    "description": "Learn how operating systems work.",
-    "required": ["Ava Perez", "Sophia Lee", "Daniel Harris"],
-    "planned": ["Ava Perez"]
+    "description": "Understand how operating systems manage resources and processes.",
+    "required": ["Sophia Perez", "Charlotte Harris", "Mia Davis", "Aiden Lee", "Henry Robinson"],
+    "planned": ["Sophia Perez", "Henry Robinson"]
   },
   {
     "code": "CS105",
-    "name": "Computer Networks",
-    "description": "Introduction to computer networking.",
-    "required": ["Olivia Wright", "Henry Brown", "Elias Williams"],
-    "planned": ["Henry Brown"]
+    "name": "Web and Mobile Development",
+    "description": "Build web and mobile applications using modern frameworks.",
+    "required": ["Lucas King", "Isabella Martinez", "Lucas Clark", "Avery Davis", "Gianna Ramirez"],
+    "planned": ["Lucas King", "Lucas Clark", "Gianna Ramirez"]
   },
   {
     "code": "CS106",
-    "name": "Software Engineering",
-    "description": "Learn the principles of software engineering.",
-    "required": ["Sophia Lee", "Daniel Harris", "Elias Moore"],
-    "planned": ["Daniel Harris"]
+    "name": "Artificial Intelligence and Machine Learning",
+    "description": "Introduction to AI and ML algorithms and applications.",
+    "required": ["Luna Jackson", "Jacob Williams", "Isabella Perez", "Ethan Walker", "Ava Robinson"],
+    "planned": ["Isabella Perez", "Ethan Walker", "Ava Robinson"]
   },
   {
     "code": "CS107",
-    "name": "Artificial Intelligence",
-    "description": "Introduction to AI concepts and techniques.",
-    "required": ["Elijah Robinson", "Ava King", "Lucas Rodriguez"],
-    "planned": ["Ava King"]
+    "name": "Cybersecurity and Ethical Hacking",
+    "description": "Learn about network security, cyber threats, and ethical hacking practices.",
+    "required": ["Alexander Lee", "Elias Williams", "Liam Martin", "Luna Smith", "Amelia Thomas"],
+    "planned": ["Elias Williams", "Liam Martin", "Luna Smith"]
   },
   {
     "code": "CS108",
-    "name": "Machine Learning",
-    "description": "Learn about machine learning algorithms.",
-    "required": ["Lucas Rodriguez", "Lucas King", "Isabella Martinez"],
-    "planned": ["Lucas Rodriguez"]
+    "name": "Cloud Computing and Big Data",
+    "description": "Understand cloud platforms and processing of large-scale data.",
+    "required": ["James Williams", "Sophia Lopez", "Ethan Johnson", "Layla Martin", "Mia Rodriguez"],
+    "planned": ["James Williams", "Ethan Johnson"]
   },
   {
     "code": "CS109",
-    "name": "Web Development",
-    "description": "Learn how to build modern web applications.",
-    "required": ["Lucas King", "Isabella Martinez", "Aiden Lee"],
-    "planned": ["Lucas King"]
+    "name": "Robotics and Embedded Systems",
+    "description": "Learn robotics principles, sensors, and embedded system programming.",
+    "required": ["Ethan Walker", "Emma Rodriguez", "Mason Johnson", "Aiden Brown", "Gianna Young"],
+    "planned": ["Ethan Walker", "Mason Johnson", "Gianna Young"]
   },
   {
     "code": "CS110",
-    "name": "Mobile App Development",
-    "description": "Learn how to develop mobile applications.",
-    "required": ["Aiden Lee", "Henry Robinson", "Lucas Clark"],
-    "planned": ["Henry Robinson"]
-  },
-  {
-    "code": "CS111",
-    "name": "Cloud Computing",
-    "description": "Introduction to cloud computing concepts.",
-    "required": ["Lucas Clark", "Luna Hernandez", "Alexander Lee"],
-    "planned": ["Luna Hernandez"]
-  },
-  {
-    "code": "CS112",
-    "name": "Cybersecurity",
-    "description": "Learn about cybersecurity principles and practices.",
-    "required": ["Alexander Lee", "Elias Williams", "Liam Martin"],
-    "planned": ["Elias Williams"]
-  },
-  {
-    "code": "CS113",
-    "name": "Human-Computer Interaction",
-    "description": "Learn how to design user-friendly systems.",
-    "required": ["Liam Martin", "Elizabeth Moore", "Sophia Perez"],
-    "planned": ["Liam Martin"]
-  },
-  {
-    "code": "CS114",
-    "name": "Game Development",
-    "description": "Learn how to develop video games.",
-    "required": ["Sophia Perez", "Charlotte Harris", "Mia Davis"],
-    "planned": ["Sophia Perez"]
-  },
-  {
-    "code": "CS115",
-    "name": "Blockchain",
-    "description": "Introduction to blockchain technology.",
-    "required": ["Mia Davis", "Ava Robinson", "Layla Martin"],
-    "planned": ["Ava Robinson"]
-  },
-  {
-    "code": "CS116",
-    "name": "Quantum Computing",
-    "description": "Learn the basics of quantum computing.",
-    "required": ["Layla Martin", "Avery Anderson", "Sophia Lopez"],
-    "planned": ["Layla Martin"]
-  },
-  {
-    "code": "CS117",
-    "name": "Big Data",
-    "description": "Introduction to big data technologies.",
-    "required": ["Sophia Lopez", "Ethan Johnson", "James Williams"],
-    "planned": ["Ethan Johnson"]
-  },
-  {
-    "code": "CS118",
-    "name": "Computer Vision",
-    "description": "Learn about computer vision techniques.",
-    "required": ["James Williams", "Logan White", "Layla Rodriguez"],
-    "planned": ["James Williams"]
-  },
-  {
-    "code": "CS119",
-    "name": "Natural Language Processing",
-    "description": "Introduction to NLP concepts.",
-    "required": ["Layla Rodriguez", "Logan Thompson", "Luna Smith"],
-    "planned": ["Layla Rodriguez"]
-  },
-  {
-    "code": "CS120",
-    "name": "Ethical Hacking",
-    "description": "Learn ethical hacking techniques.",
-    "required": ["Luna Smith", "Amelia Thomas", "Ethan Walker"],
-    "planned": ["Luna Smith"]
-  },
-  {
-    "code": "CS121",
-    "name": "Robotics",
-    "description": "Introduction to robotics.",
-    "required": ["Ethan Walker", "Emma Rodriguez", "Mason Johnson"],
-    "planned": ["Ethan Walker"]
-  },
-  {
-    "code": "CS122",
-    "name": "Embedded Systems",
-    "description": "Learn about embedded systems.",
-    "required": ["Mason Johnson", "James Davis", "Aiden Brown"],
-    "planned": ["Mason Johnson"]
-  },
-  {
-    "code": "CS123",
-    "name": "IoT",
-    "description": "Introduction to the Internet of Things.",
-    "required": ["Aiden Brown", "Ethan Lewis", "Gianna Young"],
-    "planned": ["Aiden Brown"]
-  },
-  {
-    "code": "CS124",
-    "name": "Parallel Computing",
-    "description": "Learn about parallel computing.",
-    "required": ["Gianna Young", "Olivia Williams", "Daniel Lopez"],
-    "planned": ["Gianna Young"]
-  },
-  {
-    "code": "CS125",
-    "name": "Compiler Design",
-    "description": "Learn how compilers work.",
-    "required": ["Daniel Lopez", "James King", "Lucas Clark"],
-    "planned": ["Daniel Lopez"]
-  },
-  {
-    "code": "CS126",
-    "name": "Theory of Computation",
-    "description": "Introduction to computation theory.",
-    "required": ["Lucas Clark", "Ava White", "Amelia Jones"],
-    "planned": ["Lucas Clark"]
-  },
-  {
-    "code": "CS127",
-    "name": "Digital Signal Processing",
-    "description": "Learn about DSP techniques.",
-    "required": ["Amelia Jones", "Charlotte Ramirez", "Jacob Sanchez"],
-    "planned": ["Amelia Jones"]
-  },
-  {
-    "code": "CS128",
-    "name": "Augmented Reality",
-    "description": "Introduction to AR concepts.",
-    "required": ["Jacob Sanchez", "Evelyn Johnson", "Amelia Brown"],
-    "planned": ["Jacob Sanchez"]
-  },
-  {
-    "code": "CS129",
-    "name": "Virtual Reality",
-    "description": "Learn about VR technologies.",
-    "required": ["Amelia Brown", "Oliver Anderson", "Mia Robinson"],
-    "planned": ["Amelia Brown"]
-  },
-  {
-    "code": "CS130",
-    "name": "Advanced Algorithms",
-    "description": "Learn advanced algorithmic techniques.",
-    "required": ["Mia Robinson", "Jacob Jones", "Aria King"],
-    "planned": ["Mia Robinson"]
-  },
-  {
-    "code": "CS131",
-    "name": "Distributed Systems",
-    "description": "Introduction to distributed systems.",
-    "required": ["Aria King", "Jack Garcia", "Logan Miller"],
-    "planned": ["Aria King"]
-  },
-  {
-    "code": "CS132",
-    "name": "Programming Languages",
-    "description": "Learn about programming language design.",
-    "required": ["Logan Miller", "Henry Robinson", "Caleb Miller"],
-    "planned": ["Logan Miller"]
-  },
-  {
-    "code": "CS133",
-    "name": "Software Testing",
-    "description": "Learn software testing techniques.",
-    "required": ["Caleb Miller", "Harper Rodriguez", "Evelyn Anderson"],
-    "planned": ["Caleb Miller"]
-  },
-  {
-    "code": "CS134",
-    "name": "Data Mining",
-    "description": "Introduction to data mining.",
-    "required": ["Evelyn Anderson", "Ella Robinson", "Ava Lewis"],
-    "planned": ["Evelyn Anderson"]
-  },
-  {
-    "code": "CS135",
-    "name": "Information Retrieval",
-    "description": "Learn about search engines and IR.",
-    "required": ["Ava Lewis", "William Smith", "Layla Thomas"],
-    "planned": ["Ava Lewis"]
-  },
-  {
-    "code": "CS136",
-    "name": "Digital Forensics",
-    "description": "Introduction to digital forensics.",
-    "required": ["Layla Thomas", "William Taylor", "Oliver Martinez"],
-    "planned": ["Layla Thomas"]
-  },
-  {
-    "code": "CS137",
-    "name": "Advanced Databases",
-    "description": "Learn advanced database concepts.",
-    "required": ["Oliver Martinez", "Ethan Moore", "Mia Rodriguez"],
-    "planned": ["Oliver Martinez"]
-  },
-  {
-    "code": "CS138",
-    "name": "Advanced Networking",
-    "description": "Learn advanced networking techniques.",
-    "required": ["Mia Rodriguez", "Sofia Taylor", "Daniel Sanchez"],
-    "planned": ["Mia Rodriguez"]
-  },
-  {
-    "code": "CS139",
-    "name": "Advanced Operating Systems",
-    "description": "Learn advanced OS concepts.",
-    "required": ["Daniel Sanchez", "Mia Wilson", "Caleb Martin"],
-    "planned": ["Daniel Sanchez"]
-  },
-  {
-    "code": "CS140",
     "name": "Advanced Software Engineering",
-    "description": "Learn advanced software engineering.",
-    "required": ["Caleb Martin", "William Brown", "Luna Jackson"],
-    "planned": ["Caleb Martin"]
-  },
-  {
-    "code": "CS141",
-    "name": "Advanced AI",
-    "description": "Learn advanced AI techniques.",
-    "required": ["Luna Jackson", "Jacob Williams", "Isabella Perez"],
-    "planned": ["Luna Jackson"]
-  },
-  {
-    "code": "CS142",
-    "name": "Advanced Machine Learning",
-    "description": "Learn advanced ML techniques.",
-    "required": ["Isabella Perez", "Elijah Brown", "Ethan Walker"],
-    "planned": ["Isabella Perez"]
-  },
-  {
-    "code": "CS143",
-    "name": "Advanced Web Development",
-    "description": "Learn advanced web development.",
-    "required": ["Ethan Walker", "Henry Sanchez", "Gianna Ramirez"],
-    "planned": ["Ethan Walker"]
-  },
-  {
-    "code": "CS144",
-    "name": "Advanced Mobile App Development",
-    "description": "Learn advanced mobile app development.",
-    "required": ["Gianna Ramirez", "Evelyn Sanchez", "Avery Davis"],
-    "planned": ["Gianna Ramirez"]
-  },
-  {
-    "code": "CS145",
-    "name": "Advanced Cloud Computing",
-    "description": "Learn advanced cloud computing.",
-    "required": ["Avery Davis", "Avery Wilson", "Caleb Smith"],
-    "planned": ["Avery Davis"]
-  },
-  {
-    "code": "CS146",
-    "name": "Advanced Cybersecurity",
-    "description": "Learn advanced cybersecurity.",
-    "required": ["Caleb Smith", "William Thomas", "Layla Brown"],
-    "planned": ["Caleb Smith"]
-  },
-  {
-    "code": "CS147",
-    "name": "Advanced Robotics",
-    "description": "Learn advanced robotics.",
-    "required": ["Layla Brown", "James Martinez", "Lucas Perez"],
-    "planned": ["Layla Brown"]
-  },
-  {
-    "code": "CS148",
-    "name": "Advanced IoT",
-    "description": "Learn advanced IoT concepts.",
-    "required": ["Lucas Perez", "Gianna Hernandez", "James Gonzalez"],
-    "planned": ["Lucas Perez"]
-  },
-  {
-    "code": "CS149",
-    "name": "Advanced Parallel Computing",
-    "description": "Learn advanced parallel computing.",
-    "required": ["James Gonzalez", "Alexander Robinson", "Elizabeth Brown"],
-    "planned": ["James Gonzalez"]
-  },
-  {
-    "code": "CS150",
-    "name": "Advanced Compiler Design",
-    "description": "Learn advanced compiler design.",
-    "required": ["Elizabeth Brown", "Alexander Wilson", "James Martinez"],
-    "planned": ["Elizabeth Brown"]
+    "description": "Learn software project management, testing, and design patterns.",
+    "required": ["Caleb Martin", "William Brown", "Luna Jackson", "Jacob Jones", "Aria King", "James Gonzalez", "Elizabeth Brown"],
+    "planned": ["Caleb Martin", "Aria King", "Elizabeth Brown"]
   }
 ]
