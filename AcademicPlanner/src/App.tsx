@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import DashboardPage from './pages/DashboardPage';
 import Nav from './components/Nav';
-import AlertPage from './pages/AlertPage';
+// import AlertPage from './pages/AlertPage';
+import CourseDescriptionPage from './pages/CourseDescriptionPage';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<DashboardPage />} />
-        <Route path='/alert' element={<AlertPage />} />
+        <Route path='/course' element={<CourseDescriptionPage />} />
       </Routes>
     </Router>
   )
