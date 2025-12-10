@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, AlertCircle, Mail, GraduationCap, Calendar, User } from 'lucide-react';
 
 import { useStudentsFromJSON } from '../hooks/useStudentsFromJSON';
+import { useNavigate } from "react-router-dom";
 
 // Types
 interface Student {
@@ -195,8 +196,10 @@ const AdvisorDashboard: React.FC = () => {
   const [comment, setComment] = useState("")
 
   const [approvePlan, setApprovePlan] = useState(false);
-  const [approve, setApprove] = useState("")
+  // const [approve, setApprove] = useState("")
   
+  const navigate = useNavigate();
+
   // Filter states
   const [nameSort, setNameSort] = useState<'asc' | 'desc' | 'none'>('none');
   const [gradeFilter, setGradeFilter] = useState<string>('all');
@@ -214,6 +217,9 @@ const AdvisorDashboard: React.FC = () => {
   const graduationYears = ['all', ...Array.from(new Set(students.map(s => s.graduationYear))).sort()];
   const holds = ['all', 'None', ...Array.from(new Set(students.map(s => s.holds).filter(h => h !== 'None')))];
 
+   const gotToEditPlanPage = () => {
+    navigate("/editPlan");
+  };
 
   // Filter and sort students
   const filteredStudents = students
@@ -420,13 +426,15 @@ Your Academic Advisor`;
 
                 <div className="flex gap-3 mt-3 pb-8">
                     <button 
-                      onClick={(e) => {setApprovePlan(!approvePlan)}}
+                      onClick={() => {setApprovePlan(!approvePlan)}}
                       className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-800 transition-colors font-medium">
                       Approve
                   </button>
 
 
-                  <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
+                  <button 
+                    onClick={() => gotToEditPlanPage()}
+                    className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
                       Edit Plan
                   </button>
 
@@ -448,7 +456,7 @@ Your Academic Advisor`;
                 <div className="flex gap-3 mt-3">
 
                     <button 
-                      onClick={(e) => {setCommentSent(!commentSent), setComment("")}}
+                      onClick={() => {setCommentSent(!commentSent), setComment("")}}
                       className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
                     Comment
                     </button>
