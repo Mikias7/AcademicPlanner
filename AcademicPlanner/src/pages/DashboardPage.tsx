@@ -191,6 +191,11 @@ const AdvisorDashboard: React.FC = () => {
   const students = useStudentsFromJSON()
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const [emailSent, setEmailSent] = useState(false);
+  const [commentSent, setCommentSent] = useState(false);
+  const [comment, setComment] = useState("")
+
+  const [approvePlan, setApprovePlan] = useState(false);
+  const [approve, setApprove] = useState("")
   
   // Filter states
   const [nameSort, setNameSort] = useState<'asc' | 'desc' | 'none'>('none');
@@ -198,7 +203,7 @@ const AdvisorDashboard: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<string>('all');
   const [graduationYearFilter, setGraduationYearFilter] = useState<string>('all');
   const [holdsFilter, setHoldsFilter] = useState<string>('all');
-
+ 
 //   useEffect(() => {
 //     // In a real app, you would load this from a CSV file
 //     setStudents(generateSampleData());
@@ -208,6 +213,7 @@ const AdvisorDashboard: React.FC = () => {
   const grades = ['all', ...Array.from(new Set(students.map(s => s.grade)))];
   const graduationYears = ['all', ...Array.from(new Set(students.map(s => s.graduationYear))).sort()];
   const holds = ['all', 'None', ...Array.from(new Set(students.map(s => s.holds).filter(h => h !== 'None')))];
+
 
   // Filter and sort students
   const filteredStudents = students
@@ -271,6 +277,8 @@ Your Academic Advisor`;
     setEmailSent(true);
     setTimeout(() => setEmailSent(false), 3000);
   };
+
+  // const handleSendComment
 
   if (selectedStudent) {
     return (
@@ -387,7 +395,7 @@ Your Academic Advisor`;
           </div>
 
           {/* Academic Plan */}
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-white rounded-lg shadow-md p-6 pt-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">Academic Plan</h2>
               <div className="space-y-3 max-h-96 overflow-y-auto">
                 {selectedStudent.completedCourses.map((course, idx) => (
@@ -399,31 +407,59 @@ Your Academic Advisor`;
                         <p className="text-xs text-gray-500 mt-1">{course.semester}</p>
                       </div>
                       <div className="text-right">
-                        <span className="inline-block px-2 py-1 bg-blue-50 text-blue-700 rounded font-medium text-sm">
+                        {/* <span className="inline-block px-2 py-1 bg-blue-50 text-blue-700 rounded font-medium text-sm">
                           {course.grade}
-                        </span>
-                        <p className="text-xs text-gray-500 mt-1">{course.credits} credits</p>
+                        </span> */}
+                        {/* <p className="text-xs text-gray-500 mt-1">{course.credits} credits</p> */}
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
               <div className="w-full pt-8">
+
+                <div className="flex gap-3 mt-3 pb-8">
+                    <button 
+                      onClick={(e) => {setApprovePlan(!approvePlan)}}
+                      className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-800 transition-colors font-medium">
+                      Approve
+                  </button>
+
+
+                  <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
+                      Edit Plan
+                  </button>
+
+                  {approvePlan && (
+                    <p className="text-green-700 font-medium mt-3 flex items-center">
+                      <span className="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
+                      Plan Approved
+                    </p>)}
+                </div>
+                
+
                 <textarea
-                    className="w-full h-40 p-3 border rounded-lg border-gray-300 text-sm resize-y"
-                    placeholder="comment..."
-                    value={""}
-                    onChange={(e) => console.log(e)}
-                />
+                  className="w-full h-40 p-3 border rounded-lg border-gray-300 text-sm resize-y pt-8"
+                  placeholder="comment..."
+                  value={comment}
+                  onChange={(e) => setComment(e.target.value)}
+              />
 
                 <div className="flex gap-3 mt-3">
-                    <button className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-800 transition-colors font-medium">
-                    Approve
-                    </button>
 
-                    <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
+                    <button 
+                      onClick={(e) => {setCommentSent(!commentSent), setComment("")}}
+                      className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
                     Comment
                     </button>
+
+                    {commentSent && (
+                    <p className="text-green-700 font-medium mt-3 flex items-center">
+                      <span className="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
+                      comment sent successfully!
+                    </p>
+                  )}
+
                 </div>
             </div>
 
