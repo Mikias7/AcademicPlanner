@@ -3,6 +3,7 @@ import { ChevronLeft, AlertCircle, Mail, GraduationCap, Calendar, User } from 'l
 
 import { useStudentsFromJSON } from '../hooks/useStudentsFromJSON';
 import { useNavigate } from "react-router-dom";
+import ChatSection from '../components/ChatSection';
 
 // Types
 interface Student {
@@ -473,6 +474,10 @@ Your Academic Advisor`;
 
               {/* <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">Approve</button> */}
             </div>
+                
+          <div>
+              <ChatSection />
+          </div>
 
           {/* Hold Details */}
           {selectedStudent.holdDetails && (
