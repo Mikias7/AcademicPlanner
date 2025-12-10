@@ -6,6 +6,9 @@ const EditPlanPage = () => {
 
   const [commentSent, setCommentSent] = useState(false);
   const [comment, setComment] = useState("")
+  
+  const [recommendPlan, setRecommendPlan] = useState(false);
+
   const [availableCourses] = useState([
     { id: 'cs101', code: 'CS 101', name: 'Intro to Computer Science', credits: 3, color: 'bg-blue-50' },
     { id: 'math201', code: 'MATH 201', name: 'Calculus I', credits: 4, color: 'bg-green-50' },
@@ -182,9 +185,17 @@ const EditPlanPage = () => {
 
             <div className='pt-8'>
                 <button 
+                  onClick={() => {setRecommendPlan(!recommendPlan)}}
                     className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
                     Recommend Plan
                 </button>
+
+                {recommendPlan && (
+                <p className="text-green-700 font-medium mt-3 flex items-center">
+                    <span className="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
+                    recommendation sent successfully!
+                </p>
+                )}
             </div>
     
           </div>
